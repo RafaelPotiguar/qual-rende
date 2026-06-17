@@ -206,18 +206,15 @@
       .panel-results { border-top: 0.5px solid var(--border); border-left: none; }
       .panel-inputs { border-right: none; padding: 1rem; }
       .panel-results { padding: 1rem; }
-      .calc-section { padding: 0 0.75rem 3rem; }
+      .calc-section { padding: 0 0.5rem 3rem; }
       .hero { padding: 2rem 1rem 1.5rem; }
       .results-top { grid-template-columns: 1fr 1fr; }
       .guide-grid { grid-template-columns: 1fr; }
-      .faq-section { padding: 0 1rem 2rem; }
       .guide-section { padding: 2rem 1rem; }
+      .faq-section { padding: 0 1rem 2rem; }
       nav { padding: 0 1rem; }
       .calc-card { border-radius: 10px; overflow: hidden; }
-      .input-wrap { max-width: 100%; }
-      .field { max-width: 100%; }
-      * { max-width: 100%; }
-      img, input, select { max-width: 100%; }
+      .metric-value { font-size: 15px; }
     }
 
     /* INPUTS PANEL */
@@ -516,7 +513,7 @@
     }
     .guide-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
       gap: 1rem;
     }
     .guide-card {
