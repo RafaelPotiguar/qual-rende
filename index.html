@@ -250,6 +250,8 @@
       border-radius: var(--radius);
       overflow: hidden;
       transition: border-color 0.15s;
+      width: 100%;
+      box-sizing: border-box;
     }
     .input-wrap:focus-within { border-color: var(--green-500); }
     .input-prefix, .input-suffix {
@@ -333,6 +335,10 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       margin-bottom: 1.5rem;
+    }
+    @media (max-width: 480px) {
+      .results-top { grid-template-columns: 1fr; }
+      .metric-value { font-size: 16px; }
     }
     .metric {
       background: var(--bg-soft);
