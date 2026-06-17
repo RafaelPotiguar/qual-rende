@@ -195,7 +195,7 @@
       background: var(--bg-card);
       border: 0.5px solid var(--border);
       border-radius: var(--radius-lg);
-      overflow: hidden;
+      overflow: visible;
     }
     .calc-grid {
       display: grid;
@@ -204,7 +204,8 @@
     @media (max-width: 720px) {
       .calc-grid { grid-template-columns: 1fr; }
       .panel-results { border-top: 0.5px solid var(--border); border-left: none; }
-      .panel-inputs { border-right: none; }
+      .panel-inputs { border-right: none; padding: 1rem; }
+      .panel-results { padding: 1rem; }
       .calc-section { padding: 0 0.75rem 3rem; }
       .hero { padding: 2rem 1rem 1.5rem; }
       .results-top { grid-template-columns: 1fr 1fr; }
@@ -212,7 +213,11 @@
       .faq-section { padding: 0 1rem 2rem; }
       .guide-section { padding: 2rem 1rem; }
       nav { padding: 0 1rem; }
-      .calc-card { border-radius: 10px; }
+      .calc-card { border-radius: 10px; overflow: hidden; }
+      .input-wrap { max-width: 100%; }
+      .field { max-width: 100%; }
+      * { max-width: 100%; }
+      img, input, select { max-width: 100%; }
     }
 
     /* INPUTS PANEL */
@@ -364,6 +369,7 @@
       border-radius: var(--radius);
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      max-width: 100%;
     }
     table {
       width: 100%;
