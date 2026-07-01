@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QualRende – Compare CDB, Poupança, LCI, Tesouro Selic e Prefixado</title>
   <meta name="description" content="Calculadora gratuita: descubra qual investimento rende mais para o seu dinheiro. Compare CDB, Poupança, LCI/LCA, Tesouro Selic e Prefixado com IR automático.">
-  <meta name="keywords" content="qual investimento rende mais, calculadora CDB, simulador renda fixa, poupança vs CDB, LCI LCA rendimento, tesouro selic calcular, prefixado simulador">
+  <meta name="keywords" content="qual investimento rende mais, calculadora CDB, simulador renda fixa, poupança vs CDB, LCI LCA rendimento, tesouro selic calcular, prefixado simulador, renda fixa 2026">
   <meta name="author" content="QualRende">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
@@ -22,33 +22,22 @@
   <meta name="google-site-verification" content="_OGLETpvSBGcF1JAFg8jipwp0uvXJDa1S1ImfoTN1Z0">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5790138768534917" crossorigin="anonymous"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"QualRende","url":"https://qualrende.com","description":"Calculadora de rendimento de investimentos de renda fixa.","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"}}</script>
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --green-50: #E1F5EE; --green-100: #9FE1CB; --green-500: #1D9E75;
       --green-700: #0F6E56; --green-900: #04342C;
-      --gray-50: #F7F7F6; --gray-100: #EFEFED;
+      --gray-50: #F7F7F6; --gray-100: #EFEFED; --gray-200: #D3D1C7;
       --text: #1A1A18; --text-muted: #5F5E5A; --text-faint: #888780;
       --border: rgba(0,0,0,0.10); --border-mid: rgba(0,0,0,0.16);
       --bg: #fff; --bg-soft: #F7F7F6;
       --radius: 10px; --radius-lg: 14px;
     }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg); color: var(--text);
-      font-size: 15px; line-height: 1.6;
-      width: 100%; overflow-x: hidden;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.7; overflow-x: hidden; }
 
     /* NAV */
-    nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 1rem; height: 56px;
-      border-bottom: 0.5px solid var(--border);
-      background: var(--bg); position: sticky; top: 0; z-index: 100;
-    }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 0 1rem; height: 56px; border-bottom: 0.5px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
     .logo { display: flex; align-items: center; gap: 8px; font-size: 17px; font-weight: 600; color: var(--text); text-decoration: none; }
     .logo-mark { width: 30px; height: 30px; background: var(--green-500); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #fff; }
     .nav-tag { font-size: 12px; color: var(--text-faint); background: var(--gray-100); border-radius: 20px; padding: 3px 10px; }
@@ -58,30 +47,27 @@
     .hero-eyebrow { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--green-700); background: var(--green-50); border: 0.5px solid var(--green-100); border-radius: 20px; padding: 4px 12px; margin-bottom: 1rem; }
     .hero h1 { font-size: clamp(24px, 6vw, 40px); font-weight: 600; line-height: 1.2; color: var(--text); margin-bottom: 0.75rem; }
     .hero h1 span { color: var(--green-500); }
-    .hero p { font-size: 15px; color: var(--text-muted); margin-bottom: 1.5rem; }
+    .hero p { font-size: 15px; color: var(--text-muted); margin-bottom: 1.5rem; max-width: 520px; margin-left: auto; margin-right: auto; }
     .hero-stats { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
     .hero-stat strong { display: block; font-size: 20px; font-weight: 600; color: var(--green-500); }
     .hero-stat span { font-size: 12px; color: var(--text-faint); }
 
-    /* CALCULATOR SECTION */
+    /* INTRO EDITORIAL */
+    .intro-section { max-width: 760px; margin: 0 auto; padding: 0 1rem 2.5rem; }
+    .intro-section p { color: var(--text-muted); margin-bottom: 1rem; font-size: 15px; line-height: 1.8; }
+    .intro-section h2 { font-size: 20px; font-weight: 600; color: var(--text); margin: 1.75rem 0 0.75rem; }
+    .intro-section ul { color: var(--text-muted); padding-left: 1.25rem; margin-bottom: 1rem; }
+    .intro-section ul li { margin-bottom: 0.5rem; line-height: 1.7; }
+    .intro-section strong { color: var(--text); }
+    .intro-box { background: var(--green-50); border: 0.5px solid var(--green-100); border-radius: var(--radius); padding: 1rem 1.25rem; margin: 1.5rem 0; }
+    .intro-box p { color: var(--green-700); margin: 0; font-size: 14px; }
+
+    /* CALCULATOR */
     .calc-section { padding: 0 0.75rem 3rem; }
-
-    /* MOBILE: inputs empilhados, depois resultados */
-    .panel-inputs {
-      background: var(--bg-soft);
-      border: 0.5px solid var(--border);
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-      padding: 1.25rem;
-    }
-    .panel-results {
-      background: var(--bg);
-      border: 0.5px solid var(--border);
-      border-top: none;
-      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-      padding: 1.25rem;
-    }
-
-    /* DESKTOP: side by side */
+    .calc-label { max-width: 1060px; margin: 0 auto 0.75rem; font-size: 22px; font-weight: 600; color: var(--text); padding: 0 0.25rem; }
+    .calc-sublabel { max-width: 1060px; margin: 0 auto 1.25rem; color: var(--text-muted); font-size: 14px; padding: 0 0.25rem; }
+    .panel-inputs { background: var(--bg-soft); border: 0.5px solid var(--border); border-radius: var(--radius-lg) var(--radius-lg) 0 0; padding: 1.25rem; }
+    .panel-results { background: var(--bg); border: 0.5px solid var(--border); border-top: none; border-radius: 0 0 var(--radius-lg) var(--radius-lg); padding: 1.25rem; }
     @media (min-width: 760px) {
       .calc-section { padding: 0 1.5rem 3rem; max-width: 1060px; margin: 0 auto; }
       .calc-wrapper { display: grid; grid-template-columns: 280px 1fr; border: 0.5px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
@@ -119,8 +105,6 @@
     .metric-value { font-size: 16px; font-weight: 600; color: var(--text); word-break: break-all; }
     .metric.best .metric-value { color: var(--green-700); }
     .metric.best .metric-label { color: var(--green-500); }
-
-    /* TABLE */
     .table-wrap { border: 0.5px solid var(--border); border-radius: var(--radius); overflow-x: auto; -webkit-overflow-scrolling: touch; }
     table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 440px; }
     thead th { background: var(--bg-soft); padding: 8px 10px; text-align: left; font-size: 10px; font-weight: 600; color: var(--text-faint); text-transform: uppercase; border-bottom: 0.5px solid var(--border); white-space: nowrap; }
@@ -132,66 +116,48 @@
     .td-rendimento { font-weight: 600; color: var(--green-700); }
     .td-muted { color: var(--text-faint); }
     .ir-note { display: flex; align-items: flex-start; gap: 6px; margin-top: 0.75rem; font-size: 11px; color: var(--text-faint); line-height: 1.5; }
-    .ir-note svg { flex-shrink: 0; margin-top: 1px; }
+    .chart-wrap { position: relative; width: 100%; height: 260px; margin-top: 1rem; }
+    .chart-wrap canvas { width: 100% !important; height: 100% !important; }
+
+    /* ARTICLE SECTIONS */
+    .article-section { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; border-top: 0.5px solid var(--border); }
+    .article-section h2 { font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 1rem; }
+    .article-section h3 { font-size: 17px; font-weight: 600; color: var(--text); margin: 1.5rem 0 0.6rem; }
+    .article-section p { color: var(--text-muted); margin-bottom: 1rem; line-height: 1.8; font-size: 15px; }
+    .article-section ul, .article-section ol { color: var(--text-muted); padding-left: 1.25rem; margin-bottom: 1rem; }
+    .article-section li { margin-bottom: 0.5rem; line-height: 1.7; font-size: 15px; }
+    .article-section strong { color: var(--text); }
+    .article-section a { color: var(--green-700); }
+    .tip-box { background: var(--green-50); border-left: 3px solid var(--green-500); border-radius: 0 var(--radius) var(--radius) 0; padding: 1rem 1.25rem; margin: 1.25rem 0; }
+    .tip-box p { color: var(--green-700); margin: 0; font-size: 14px; }
+    .tip-box strong { color: var(--green-900); }
+    .warn-box { background: #FEF3C7; border-left: 3px solid #F59E0B; border-radius: 0 var(--radius) var(--radius) 0; padding: 1rem 1.25rem; margin: 1.25rem 0; }
+    .warn-box p { color: #92400E; margin: 0; font-size: 14px; }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 14px; }
+    .compare-table th { background: var(--gray-50); padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 600; color: var(--text-faint); text-transform: uppercase; border-bottom: 0.5px solid var(--border); }
+    .compare-table td { padding: 10px 12px; border-bottom: 0.5px solid var(--border); color: var(--text-muted); }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td:first-child { font-weight: 600; color: var(--text); }
+    .td-sim { color: var(--green-700); font-weight: 600; }
+    .td-nao { color: #EF4444; }
 
     /* FAQ */
-    .faq-section { max-width: 680px; margin: 0 auto; padding: 2rem 1rem 2rem; }
-    .faq-title { font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 1.25rem; }
+    .faq-section { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; border-top: 0.5px solid var(--border); }
+    .faq-section h2 { font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 1.25rem; }
     details { border-bottom: 0.5px solid var(--border); padding: 0.875rem 0; }
-    summary { font-size: 15px; font-weight: 500; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    summary { font-size: 15px; font-weight: 500; color: var(--text); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
     summary::-webkit-details-marker { display: none; }
-    summary::after { content: '+'; font-size: 18px; color: var(--text-faint); font-weight: 300; }
+    summary::after { content: '+'; font-size: 18px; color: var(--text-faint); font-weight: 300; flex-shrink: 0; }
     details[open] summary::after { content: '−'; }
-    details p { font-size: 14px; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.6; }
+    details p { font-size: 14px; color: var(--text-muted); margin-top: 0.75rem; line-height: 1.7; }
 
-    /* GUIDE */
-    .guide-section { background: var(--bg-soft); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); padding: 2rem 1rem; }
-    .guide-inner { max-width: 1060px; margin: 0 auto; }
-    .guide-title { font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
-    .guide-intro { font-size: 14px; color: var(--text-muted); margin-bottom: 1.5rem; }
-    .guide-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-    @media (min-width: 600px) { .guide-grid { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 900px) { .guide-grid { grid-template-columns: 1fr 1fr 1fr; } }
-    .guide-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
-    .guide-card-fgc { border-color: var(--green-100); }
-    .guide-icon { display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 6px; margin-bottom: 0.75rem; }
-    .guide-icon-cdb { background: #DBEAFE; color: #1E40AF; }
-    .guide-icon-poupanca { background: var(--green-50); color: var(--green-700); }
-    .guide-icon-lci { background: #FEF3C7; color: #92400E; }
-    .guide-icon-selic { background: #EDE9FE; color: #5B21B6; }
-    .guide-icon-pre { background: #FFE4E6; color: #9F1239; }
-    .guide-icon-fgc { background: var(--green-100); color: var(--green-900); }
-    .guide-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; line-height: 1.3; }
-    .guide-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem; }
-    .guide-card ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 4px; }
-    .guide-card ul li { font-size: 12px; color: var(--text-muted); padding-left: 14px; position: relative; line-height: 1.5; }
-    .guide-card ul li::before { content: '→'; position: absolute; left: 0; color: var(--green-500); font-size: 11px; }
-    .guide-card ul li strong { color: var(--text); }
-
-    .chart-wrap { position: relative; width: 100%; height: 260px; margin-top: 0.5rem; }
-    .chart-wrap canvas { width: 100% !important; height: 100% !important; }
     /* COOKIE BANNER */
-    .cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #1A1A18;
-      color: #fff;
-      padding: 1rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      z-index: 999;
-      flex-wrap: wrap;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
-    }
+    .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1A1A18; color: #fff; padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; z-index: 999; flex-wrap: wrap; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
     .cookie-banner p { font-size: 13px; color: #D1D5DB; margin: 0; line-height: 1.5; flex: 1; min-width: 200px; }
     .cookie-banner a { color: var(--green-100); text-decoration: underline; }
     .cookie-btn { background: var(--green-500); color: #fff; border: none; border-radius: 8px; padding: 8px 20px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
-    .cookie-btn:hover { background: var(--green-700); }
     .cookie-hidden { display: none !important; }
+
     /* FOOTER */
     footer { border-top: 0.5px solid var(--border); padding: 2rem 1rem; text-align: center; }
     .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
@@ -208,13 +174,14 @@
     <span class="nav-tag">simulador gratuito</span>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-eyebrow">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
       renda fixa comparada
     </div>
     <h1>Qual rende mais<br>para o <span>seu</span> dinheiro?</h1>
-    <p>Compare CDB, poupança, LCI/LCA, Tesouro Selic e prefixado em segundos. IR calculado automaticamente.</p>
+    <p>Compare CDB, Poupança, LCI/LCA, Tesouro Selic e Prefixado em segundos. IR calculado automaticamente com base nas regras vigentes.</p>
     <div class="hero-stats">
       <div class="hero-stat"><strong>5</strong><span>investimentos</span></div>
       <div class="hero-stat"><strong>100%</strong><span>gratuito</span></div>
@@ -222,12 +189,23 @@
     </div>
   </section>
 
-  <section class="calc-section" id="calculadora">
-    <div class="calc-wrapper">
+  <!-- INTRO EDITORIAL -->
+  <section class="intro-section">
+    <p>Com a taxa Selic em patamares elevados, a renda fixa voltou a ser o destino preferido dos brasileiros que querem fazer o dinheiro render com segurança. Mas entre tantas opções — CDB, Poupança, LCI, LCA, Tesouro Selic e Prefixado — qual realmente vale mais a pena?</p>
+    <p>A resposta depende de três variáveis: <strong>o prazo que você tem disponível</strong>, <strong>a taxa que o banco ou corretora oferece</strong> e <strong>se o produto é isento de Imposto de Renda</strong>. A calculadora abaixo leva tudo isso em conta automaticamente, buscando o CDI atualizado diretamente do Banco Central.</p>
 
+    <div class="intro-box">
+      <p>💡 <strong>Como usar:</strong> informe o valor que você tem para investir, o aporte mensal (se houver) e o prazo. A calculadora já preenche o CDI atual automaticamente. Ajuste os demais campos conforme a oferta do seu banco e veja o resultado em tempo real.</p>
+    </div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section class="calc-section" id="calculadora">
+    <p class="calc-label">Simulador de Renda Fixa</p>
+    <p class="calc-sublabel">Preencha os campos abaixo e compare todos os investimentos lado a lado, já com IR descontado.</p>
+    <div class="calc-wrapper">
       <div class="panel-inputs">
         <span class="section-label">Valor e prazo</span>
-
         <div class="field">
           <label for="valor">Valor inicial</label>
           <div class="input-wrap">
@@ -235,7 +213,6 @@
             <input type="number" id="valor" value="10000" min="0" step="100">
           </div>
         </div>
-
         <div class="field">
           <label for="aporte">Aporte mensal</label>
           <div class="input-wrap">
@@ -243,15 +220,12 @@
             <input type="number" id="aporte" value="500" min="0" step="50">
           </div>
         </div>
-
         <div class="field">
           <label>Prazo: <span class="prazo-display" id="prazo-label">12 meses</span></label>
           <input type="range" id="prazo" min="1" max="120" value="12" step="1">
           <div class="prazo-labels"><span>1 mês</span><span>5 anos</span><span>10 anos</span></div>
         </div>
-
         <span class="section-label" style="margin-top:1.25rem">Taxas de referência</span>
-
         <div class="field">
           <label for="cdi">CDI anual (%) <span id="cdi-status" class="cdi-status cdi-loading">buscando…</span></label>
           <div class="input-wrap">
@@ -260,7 +234,6 @@
           </div>
           <p class="cdi-hint" id="cdi-hint">Buscando taxa atual do Banco Central…</p>
         </div>
-
         <div class="field">
           <label>CDB: <span id="cdb-pct-label" style="color:var(--green-700);font-weight:600">110%</span> do CDI</label>
           <div class="slider-row">
@@ -268,7 +241,6 @@
             <span class="slider-val" id="cdb-pct-out">110%</span>
           </div>
         </div>
-
         <div class="field">
           <label for="prefixado">Prefixado (taxa a.a.)</label>
           <div class="input-wrap">
@@ -286,7 +258,6 @@
           <div class="metric"><div class="metric-label">valor final líquido</div><div class="metric-value" id="best-total">—</div></div>
           <div class="metric"><div class="metric-label">total investido</div><div class="metric-value" id="total-investido">—</div></div>
         </div>
-
         <span class="section-label">Comparação completa</span>
         <div class="table-wrap">
           <table>
@@ -298,40 +269,153 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
           <span>IR regressivo: 22,5% (até 180d) → 20% (até 360d) → 17,5% (até 720d) → 15% (acima). Poupança e LCI/LCA isentos. LCI/LCA simulado com 92% do CDI bruto.</span>
         </div>
-
         <span class="section-label" style="margin-top:1.25rem">Evolução do patrimônio</span>
-        <div class="chart-wrap">
-          <canvas id="grafico"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="grafico"></canvas></div>
       </div>
-
     </div>
   </section>
 
+  <!-- ARTIGO: CDB vs Poupança -->
+  <article class="article-section" id="cdb-vs-poupanca">
+    <h2>CDB ou Poupança: qual rende mais em 2026?</h2>
+    <p>Essa é uma das perguntas mais buscadas pelos brasileiros quando o assunto é investimento. A resposta curta: <strong>na grande maioria dos casos, o CDB rende mais que a poupança</strong>. Mas entender o porquê ajuda a tomar decisões melhores.</p>
+    <p>A poupança tem uma regra de rendimento bastante específica: quando a taxa Selic está acima de 8,5% ao ano, ela rende apenas 0,5% ao mês mais a Taxa Referencial (TR), que atualmente está próxima de zero. Isso equivale a cerca de 6,17% ao ano bruto.</p>
+    <p>Um CDB que paga 100% do CDI, com o CDI próximo de 14% ao ano, já rende mais que o dobro da poupança bruta — mesmo depois de descontar o Imposto de Renda. E muitos bancos digitais e corretoras oferecem CDBs pagando 110%, 115% ou até 120% do CDI para valores menores.</p>
+
+    <div class="tip-box">
+      <p><strong>Regra prática:</strong> qualquer CDB que pague acima de 85% do CDI já supera a poupança líquida no longo prazo (acima de 2 anos). Use a calculadora acima para comparar com as taxas reais da sua oferta.</p>
+    </div>
+
+    <h3>Por que ainda há dinheiro na poupança?</h3>
+    <p>Apesar de render menos, a poupança ainda concentra trilhões de reais por alguns motivos: <strong>liquidez imediata</strong> (o dinheiro cai na hora), <strong>zero burocracia</strong> (qualquer banco oferece) e a <strong>cobertura do FGC</strong> até R$ 250 mil. Muita gente também a usa como conta de reserva de emergência pelo hábito e pela facilidade.</p>
+    <p>No entanto, o Tesouro Selic oferece praticamente as mesmas vantagens — liquidez diária, segurança máxima (garantido pelo governo federal) — e rende significativamente mais. Para reserva de emergência, o Tesouro Selic é tecnicamente a melhor opção.</p>
+
+    <div class="warn-box">
+      <p>⚠️ <strong>Atenção ao aniversário da poupança:</strong> o rendimento da poupança só é creditado na data de aniversário da aplicação (dia do mês em que você depositou). Se resgatar antes, perde todo o rendimento daquele período. Isso não acontece no Tesouro Selic ou em CDBs com liquidez diária.</p>
+    </div>
+  </article>
+
+  <!-- ARTIGO: LCI e LCA -->
+  <article class="article-section" id="lci-lca">
+    <h2>LCI e LCA: o investimento isento de IR que pouca gente conhece</h2>
+    <p>LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio) são dois dos investimentos mais vantajosos da renda fixa brasileira — e ainda são subutilizados por grande parte dos investidores.</p>
+    <p>O grande diferencial é a <strong>isenção total de Imposto de Renda para pessoa física</strong>. Enquanto um CDB de 100% do CDI perde entre 15% e 22,5% do lucro para o IR, a LCI e a LCA entregam o rendimento bruto direto na conta.</p>
+
+    <h3>Como comparar LCI/LCA com CDB na prática</h3>
+    <p>Para comparar corretamente, você precisa encontrar a <strong>taxa equivalente tributada</strong>. A fórmula é simples: divida a taxa da LCI/LCA por (1 - alíquota do IR). Exemplos práticos:</p>
+    <ul>
+      <li>LCI de 92% do CDI por até 360 dias → equivale a um CDB de 115% do CDI (com IR de 20%)</li>
+      <li>LCI de 90% do CDI por mais de 720 dias → equivale a um CDB de 105,9% do CDI (com IR de 15%)</li>
+      <li>LCI de 88% do CDI → ainda supera um CDB de 100% do CDI em qualquer prazo</li>
+    </ul>
+    <p>A calculadora do QualRende já faz essa comparação automaticamente. O valor mostrado para LCI/LCA já é o rendimento líquido real, sem IR, então você pode comparar diretamente com os outros.</p>
+
+    <div class="tip-box">
+      <p><strong>Onde encontrar boas taxas de LCI/LCA:</strong> bancos digitais como XP, BTG, Nubank, Inter e Rico costumam oferecer LCIs e LCAs com taxas competitivas. Sempre compare a taxa líquida equivalente antes de decidir.</p>
+    </div>
+
+    <h3>Cuidado com a carência</h3>
+    <p>A principal desvantagem de LCI e LCA é a <strong>carência mínima</strong>. A regulamentação exige pelo menos 9 meses de carência para LCI e 90 dias para LCA. Ou seja, se você precisar do dinheiro antes desse prazo, não conseguirá resgatar. Por isso, não são indicadas para reserva de emergência — apenas para o dinheiro que você tem certeza que não vai precisar no curto prazo.</p>
+  </article>
+
+  <!-- ARTIGO: IR Regressivo -->
+  <article class="article-section" id="imposto-renda">
+    <h2>Imposto de Renda na renda fixa: entenda a tabela regressiva</h2>
+    <p>O Imposto de Renda sobre investimentos de renda fixa no Brasil funciona com uma <strong>tabela regressiva</strong>: quanto mais tempo você deixa o dinheiro investido, menos imposto paga. Isso incentiva o investimento de longo prazo.</p>
+
+    <table class="compare-table">
+      <thead><tr><th>Prazo do investimento</th><th>Alíquota de IR</th><th>Sobre o quê incide</th></tr></thead>
+      <tbody>
+        <tr><td>Até 180 dias</td><td>22,5%</td><td>Somente sobre o lucro</td></tr>
+        <tr><td>De 181 a 360 dias</td><td>20,0%</td><td>Somente sobre o lucro</td></tr>
+        <tr><td>De 361 a 720 dias</td><td>17,5%</td><td>Somente sobre o lucro</td></tr>
+        <tr><td>Acima de 720 dias</td><td>15,0%</td><td>Somente sobre o lucro</td></tr>
+      </tbody>
+    </table>
+
+    <p>O IR é retido na fonte automaticamente pela instituição financeira no momento do resgate — você não precisa declarar separadamente nem calcular nada. O valor que cai na sua conta já é o valor líquido.</p>
+    <p><strong>Importante:</strong> o IR incide apenas sobre o <em>lucro</em>, não sobre o valor total investido. Se você investiu R$ 10.000 e o investimento rendeu R$ 1.000, o IR será cobrado apenas sobre os R$ 1.000 de lucro.</p>
+
+    <div class="tip-box">
+      <p><strong>Estratégia prática:</strong> se você tem um CDB com vencimento em 18 meses, pode ser vantajoso manter até o prazo mesmo que precise do dinheiro antes dos 24 meses — assim paga 17,5% em vez de 20%. Verifique sempre se o produto tem liquidez antes do vencimento.</p>
+    </div>
+  </article>
+
+  <!-- ARTIGO: Como escolher -->
+  <article class="article-section" id="como-escolher">
+    <h2>Como escolher o melhor investimento para o seu perfil</h2>
+    <p>Não existe uma resposta única para qual é o melhor investimento de renda fixa. A escolha ideal depende de três fatores principais: <strong>quando você vai precisar do dinheiro</strong>, <strong>qual é o objetivo</strong> e <strong>qual taxa o mercado está oferecendo</strong>.</p>
+
+    <h3>Para reserva de emergência</h3>
+    <p>A reserva de emergência precisa estar sempre disponível — você não sabe quando vai precisar. Por isso, a liquidez diária é essencial. As melhores opções são:</p>
+    <ul>
+      <li><strong>Tesouro Selic:</strong> segurança máxima (garantido pelo governo federal), liquidez diária sem perdas, rende próximo a 100% do CDI</li>
+      <li><strong>CDB com liquidez diária:</strong> muitos bancos digitais oferecem CDBs que pagam 100% a 110% do CDI com resgate no dia seguinte</li>
+    </ul>
+    <p>Poupança não é recomendada para reserva de emergência justamente pelo risco do aniversário: se você resgatar antes da data certa, perde o rendimento do período.</p>
+
+    <h3>Para objetivos de médio prazo (1 a 3 anos)</h3>
+    <p>Com um prazo definido e sem necessidade de liquidez imediata, você pode buscar taxas melhores:</p>
+    <ul>
+      <li><strong>CDB de banco digital:</strong> muitos pagam 110% a 120% do CDI para prazos de 1 a 2 anos</li>
+      <li><strong>LCI/LCA:</strong> com isenção de IR, uma LCI de 92% do CDI já supera um CDB de 115% do CDI após 1 ano</li>
+    </ul>
+
+    <h3>Para longo prazo (acima de 3 anos)</h3>
+    <p>Para objetivos de longo prazo como aposentadoria complementar ou compra de imóvel, vale considerar o Prefixado quando as taxas estão altas. Se a Selic cair nos próximos anos, quem travou uma taxa prefixada de 13% ou 14% ao ano vai se beneficiar.</p>
+
+    <table class="compare-table">
+      <thead><tr><th>Objetivo</th><th>Melhor opção</th><th>Por quê</th></tr></thead>
+      <tbody>
+        <tr><td>Reserva de emergência</td><td>Tesouro Selic ou CDB liquidez diária</td><td>Segurança + acesso imediato</td></tr>
+        <tr><td>Meta em 1 ano</td><td>LCI/LCA ou CDB 110%+</td><td>Isenção de IR ou taxa maior</td></tr>
+        <tr><td>Meta em 2-3 anos</td><td>LCI/LCA longo prazo</td><td>IR de 15% + isenção total na LCI</td></tr>
+        <tr><td>Longo prazo</td><td>Prefixado (com Selic alta)</td><td>Travar taxa boa agora</td></tr>
+      </tbody>
+    </table>
+  </article>
+
+  <!-- FAQ -->
   <section class="faq-section" id="duvidas">
-    <h2 class="faq-title">Dúvidas frequentes</h2>
-    <details><summary>O que é o CDI e por que ele importa?</summary><p>O CDI (Certificado de Depósito Interbancário) é a taxa de referência para investimentos de renda fixa no Brasil. Quase sempre fica 0,10% abaixo da taxa Selic. A maioria dos CDBs, LCIs e LCAs são remunerados como um percentual do CDI — quanto maior esse percentual, mais o investimento rende.</p></details>
-    <details><summary>Como funciona o IR regressivo?</summary><p>O Imposto de Renda sobre renda fixa incide apenas sobre o lucro e vai caindo conforme o prazo: 22,5% para resgates em até 180 dias, 20% até 360 dias, 17,5% até 720 dias e 15% acima disso. Poupança, LCI e LCA são isentos de IR para pessoa física.</p></details>
-    <details><summary>Vale mais a pena LCI/LCA ou CDB?</summary><p>Depende das taxas e do prazo. LCI e LCA são isentos de IR, então mesmo com uma taxa menor podem render mais que um CDB tributado. A calculadora faz essa comparação automaticamente.</p></details>
-    <details><summary>Qual a diferença entre prefixado e pós-fixado?</summary><p>No prefixado você trava a taxa hoje — independente do que a Selic fizer. No pós-fixado (CDB % CDI, Tesouro Selic) o rendimento acompanha a taxa de juros.</p></details>
-    <details><summary>Os valores calculados são garantidos?</summary><p>Os valores são estimativas com base nas taxas informadas. Esta calculadora é uma ferramenta educacional — consulte sempre um assessor de investimentos antes de decidir.</p></details>
+    <h2>Perguntas frequentes sobre renda fixa</h2>
+
+    <details>
+      <summary>O que é o CDI e por que ele é a referência da renda fixa?</summary>
+      <p>O CDI (Certificado de Depósito Interbancário) é a taxa que os bancos usam para emprestar dinheiro entre si no curto prazo. Ele fica sempre muito próximo da taxa Selic — geralmente 0,10% abaixo. Como é uma taxa de mercado atualizada diariamente, tornou-se a principal referência para remuneração de investimentos de renda fixa no Brasil. Quando um banco diz que paga "110% do CDI", significa que você vai receber 10% acima dessa taxa de referência.</p>
+    </details>
+
+    <details>
+      <summary>Qual é o rendimento da poupança atualmente?</summary>
+      <p>Com a Selic acima de 8,5% ao ano (como está em 2026), a poupança rende 0,5% ao mês mais a Taxa Referencial (TR). Isso equivale a aproximadamente 6,17% ao ano bruto — e como é isenta de IR, esse é o valor líquido. Ainda assim, é bem inferior ao CDB, LCI e Tesouro Selic nas condições atuais de mercado.</p>
+    </details>
+
+    <details>
+      <summary>O que é o FGC e quais investimentos ele cobre?</summary>
+      <p>O Fundo Garantidor de Créditos (FGC) é uma entidade privada sem fins lucrativos que garante os depósitos e investimentos em caso de falência de uma instituição financeira. O limite é de R$ 250 mil por CPF por instituição (com limite global de R$ 1 milhão a cada 4 anos). Estão cobertos: poupança, CDB, LCI, LCA e letras hipotecárias. O Tesouro Selic não precisa do FGC pois é garantido diretamente pelo governo federal.</p>
+    </details>
+
+    <details>
+      <summary>Posso perder dinheiro em renda fixa?</summary>
+      <p>Na prática, raramente. Os investimentos de renda fixa pós-fixados (CDB, LCI, Tesouro Selic) seguem a variação do CDI ou da Selic e não têm risco de perda do principal em condições normais. O único risco real é a quebra da instituição financeira emissora — por isso o FGC existe. Já os prefixados podem perder valor de mercado se você precisar vender antes do vencimento, mas se carregar até o fim, recebe exatamente o combinado.</p>
+    </details>
+
+    <details>
+      <summary>Qual a diferença entre CDB de banco grande e banco pequeno?</summary>
+      <p>Bancos menores e médios costumam oferecer taxas maiores (110%, 120%, até 130% do CDI) justamente porque precisam captar recursos de forma mais competitiva. O risco teórico é maior, mas o FGC cobre até R$ 250 mil — então para valores dentro desse limite, o risco é praticamente o mesmo. Acima disso, faz sentido diversificar entre diferentes instituições.</p>
+    </details>
+
+    <details>
+      <summary>Preciso declarar investimentos de renda fixa no Imposto de Renda?</summary>
+      <p>Sim, mesmo com o IR retido na fonte você precisa declarar os investimentos e rendimentos no IR anual, caso seja obrigado a entregar a declaração. As instituições financeiras enviam um informe de rendimentos no início do ano com todos os valores necessários para o preenchimento. O fato de o IR ter sido retido na fonte não elimina a obrigação de declarar.</p>
+    </details>
+
+    <details>
+      <summary>Como funciona o Tesouro Selic na prática?</summary>
+      <p>O Tesouro Selic é um título público federal vendido pelo governo através do Tesouro Direto. Você empresta dinheiro ao governo e recebe a taxa Selic como remuneração, atualizada diariamente. É possível comprar a partir de cerca de R$ 30 (1% de um título). A liquidez é diária — o governo garante a recompra a qualquer momento. É o investimento de menor risco do país, ideal para reserva de emergência e objetivos de curto prazo.</p>
+    </details>
   </section>
 
-  <section class="guide-section" id="guia">
-    <div class="guide-inner">
-      <h2 class="guide-title">Guia rápido: entenda cada investimento</h2>
-      <p class="guide-intro">Antes de simular, vale entender como cada opção funciona na prática.</p>
-      <div class="guide-grid">
-        <article class="guide-card"><div class="guide-icon guide-icon-cdb">CDB</div><h3>CDB — Certificado de Depósito Bancário</h3><p>Você empresta dinheiro ao banco e recebe juros em troca. A maioria dos CDBs paga um percentual do CDI. Tem cobertura do FGC até R$ 250 mil por CPF e por instituição.</p><ul><li><strong>Para quem é:</strong> quem quer rentabilidade acima da poupança com segurança.</li><li><strong>Atenção:</strong> bancos menores costumam oferecer taxas maiores, mas verifique o rating.</li></ul></article>
-        <article class="guide-card"><div class="guide-icon guide-icon-poupanca">P</div><h3>Poupança</h3><p>O investimento mais popular do Brasil. Quando a Selic está acima de 8,5% ao ano, rende 0,5% ao mês + TR. Isenta de IR para pessoa física.</p><ul><li><strong>Para quem é:</strong> quem prioriza simplicidade e liquidez imediata.</li><li><strong>Atenção:</strong> com Selic alta, quase sempre perde para CDB e LCI no longo prazo.</li></ul></article>
-        <article class="guide-card"><div class="guide-icon guide-icon-lci">LCI</div><h3>LCI / LCA — Letras de Crédito</h3><p>Isentas de IR para pessoa física, o que as torna competitivas mesmo com taxas brutas menores. Também têm cobertura do FGC até R$ 250 mil.</p><ul><li><strong>Para quem é:</strong> quem quer isenção de IR sem abrir mão de segurança.</li><li><strong>Atenção:</strong> geralmente têm carência mínima.</li></ul></article>
-        <article class="guide-card"><div class="guide-icon guide-icon-selic">TS</div><h3>Tesouro Selic</h3><p>Título público federal que acompanha a Selic diariamente. Garantido pelo governo federal. Liquidez diária sem perda de rentabilidade.</p><ul><li><strong>Para quem é:</strong> reserva de emergência com segurança máxima.</li><li><strong>Atenção:</strong> taxa de custódia da B3 (0,20% a.a.) acima de R$ 10 mil.</li></ul></article>
-        <article class="guide-card"><div class="guide-icon guide-icon-pre">PRÉ</div><h3>Prefixado</h3><p>A taxa é definida no momento da aplicação e não muda. Se a Selic cair, você ganha mais que os pós-fixados.</p><ul><li><strong>Para quem é:</strong> quem acredita que os juros vão cair.</li><li><strong>Atenção:</strong> venda antecipada pode gerar perda.</li></ul></article>
-        <article class="guide-card guide-card-fgc"><div class="guide-icon guide-icon-fgc">FGC</div><h3>FGC — Fundo Garantidor de Créditos</h3><p>O FGC garante até <strong>R$ 250 mil por CPF por instituição</strong>. CDB, poupança, LCI e LCA têm essa proteção. Tesouro Selic é garantido pelo governo federal.</p><ul><li><strong>Dica:</strong> distribua entre bancos se tiver mais de R$ 250 mil.</li></ul></article>
-      </div>
-    </div>
-  </section>
-
+  <!-- COOKIE BANNER -->
   <div class="cookie-banner" id="cookieBanner">
     <p>Usamos cookies para melhorar sua experiência e exibir anúncios relevantes. Ao continuar navegando, você concorda com nossa <a href="/privacidade.html">Política de Privacidade</a>.</p>
     <button class="cookie-btn" onclick="aceitarCookies()">Entendi</button>
@@ -340,7 +424,8 @@
   <footer>
     <div class="footer-links">
       <a href="#calculadora">Calculadora</a>
-      <a href="#guia">Guia</a>
+      <a href="#cdb-vs-poupanca">CDB vs Poupança</a>
+      <a href="#lci-lca">LCI/LCA</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="/privacidade.html">Privacidade</a>
     </div>
@@ -352,7 +437,6 @@
   <script>
     const fmt = v => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     const pct = v => v.toFixed(2).replace('.', ',') + '%';
-
     let grafico = null;
 
     function irAliquota(meses) {
@@ -375,18 +459,14 @@
       let saldo = vi;
       for (let i = 1; i <= meses; i++) {
         saldo = saldo * (1 + tm) + ap;
-        const totalInv = vi + ap * i;
-        const ganho = saldo - totalInv;
-        const aliq = irAliquota(i);
-        const imposto = isento ? 0 : ganho * aliq;
-        serie.push(parseFloat((saldo - imposto).toFixed(2)));
+        const ganho = saldo - (vi + ap * i);
+        serie.push(parseFloat((saldo - (isento ? 0 : ganho * irAliquota(i))).toFixed(2)));
       }
       return serie;
     }
 
     function poupancaTaxa(cdi) {
-      const selic = cdi + 0.1;
-      return selic > 8.5 ? 0.5 * 12 + 0.5 : selic * 0.70;
+      return (cdi + 0.1) > 8.5 ? 6.17 : (cdi + 0.1) * 0.70;
     }
 
     function calcAll() {
@@ -400,11 +480,11 @@
       const aliq = irAliquota(meses);
 
       const investimentos = [
-        { nome: 'CDB',          taxa: cdi * cdbPct / 100, aliq, isento: false, cor: '#3B82F6' },
-        { nome: 'Poupança',     taxa: poupancaTaxa(cdi),  aliq: 0, isento: true,  cor: '#F59E0B' },
-        { nome: 'LCI / LCA',   taxa: cdi * 0.92,         aliq: 0, isento: true,  cor: '#1D9E75' },
-        { nome: 'Tesouro Selic',taxa: cdi,                aliq, isento: false, cor: '#8B5CF6' },
-        { nome: 'Prefixado',    taxa: prefTaxa,           aliq, isento: false, cor: '#EF4444' },
+        { nome: 'CDB',           taxa: cdi * cdbPct / 100, aliq, isento: false, cor: '#3B82F6' },
+        { nome: 'Poupança',      taxa: poupancaTaxa(cdi),  aliq: 0, isento: true,  cor: '#F59E0B' },
+        { nome: 'LCI / LCA',    taxa: cdi * 0.92,         aliq: 0, isento: true,  cor: '#1D9E75' },
+        { nome: 'Tesouro Selic', taxa: cdi,                aliq, isento: false, cor: '#8B5CF6' },
+        { nome: 'Prefixado',     taxa: prefTaxa,           aliq, isento: false, cor: '#EF4444' },
       ];
 
       const results = investimentos.map(inv => {
@@ -437,7 +517,6 @@
         tbody.appendChild(tr);
       });
 
-      // GRÁFICO
       const labels = Array.from({ length: meses }, (_, i) => {
         const m = i + 1;
         if (meses <= 24) return m + 'm';
@@ -448,18 +527,15 @@
         label: inv.nome,
         data: calcSerie(inv.taxa, meses, vi, ap, inv.isento),
         borderColor: inv.cor,
-        backgroundColor: inv.cor + '18',
         borderWidth: 2,
         pointRadius: 0,
         tension: 0.3,
         fill: false,
       }));
 
-      // Linha do total investido
-      const totalSerie = Array.from({ length: meses }, (_, i) => vi + ap * (i + 1));
       datasets.push({
         label: 'Total investido',
-        data: totalSerie,
+        data: Array.from({ length: meses }, (_, i) => vi + ap * (i + 1)),
         borderColor: '#D1D5DB',
         borderWidth: 1.5,
         borderDash: [4, 4],
@@ -482,28 +558,12 @@
             maintainAspectRatio: false,
             interaction: { mode: 'index', intersect: false },
             plugins: {
-              legend: {
-                position: 'bottom',
-                labels: { boxWidth: 12, font: { size: 11 }, padding: 12 }
-              },
-              tooltip: {
-                callbacks: {
-                  label: ctx => ' ' + ctx.dataset.label + ': ' + fmt(ctx.parsed.y)
-                }
-              }
+              legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 }, padding: 12 } },
+              tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label + ': ' + fmt(ctx.parsed.y) } }
             },
             scales: {
-              x: {
-                grid: { display: false },
-                ticks: { font: { size: 10 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }
-              },
-              y: {
-                grid: { color: 'rgba(0,0,0,0.05)' },
-                ticks: {
-                  font: { size: 10 },
-                  callback: v => 'R$ ' + (v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v)
-                }
-              }
+              x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 } },
+              y: { grid: { color: 'rgba(0,0,0,0.05)' }, ticks: { font: { size: 10 }, callback: v => 'R$ ' + (v >= 1000 ? (v / 1000).toFixed(0) + 'k' : v) } }
             }
           }
         });
@@ -554,10 +614,6 @@
       }
     }
 
-    calcAll();
-    buscarCDI();
-
-    // Cookie banner
     function aceitarCookies() {
       localStorage.setItem('cookiesAceitos', '1');
       document.getElementById('cookieBanner').classList.add('cookie-hidden');
@@ -565,6 +621,9 @@
     if (localStorage.getItem('cookiesAceitos')) {
       document.getElementById('cookieBanner').classList.add('cookie-hidden');
     }
+
+    calcAll();
+    buscarCDI();
   </script>
 </body>
 </html>
